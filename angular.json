@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-challenge-interview"
+    }
+  },
+  "defaultProject": "angular-challenge-interview",
+  "cli": {
+    "analytics": false
+  }
 }
