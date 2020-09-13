@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,10 +11,18 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { StarRatingsComponent } from './components/star-ratings/star-ratings.component';
 import { TopofpageComponent } from './components/topofpage/topofpage.component';
+import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 
 @NgModule({
-  declarations: [AppComponent, ToolbarComponent, CardComponent, AccordionComponent, ProgressBarComponent, StarRatingsComponent, TopofpageComponent],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  declarations: [AppComponent,
+                ToolbarComponent,
+                CardComponent,
+                AccordionComponent,
+                ProgressBarComponent,
+                StarRatingsComponent,
+                TopofpageComponent,
+                ComponentDocumentationComponent],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, RouterModule.forRoot([ ])],
   providers: [],
   bootstrap: [AppComponent],
 })
