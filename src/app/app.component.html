@@ -13,9 +13,22 @@
 
 </app-toolbar>
 
-<app-card [iconClasses] = "'fa-info-circle'" [title]= "'Card'" [subtitle]= "'Components'">
+<main>
+  <p>[Error] Icons are not showing</p>
+  <app-card [iconClasses]= "'fas fa-info-circle'" [title]= "'Accordian'" [subtitle]= "'Compoenents'">
 
-  <p footer>Footer Content</p>
-  <p body>Body Content</p>
+    <app-accordion body [items]= "accordionItems"></app-accordion>
 
-</app-card>
+
+  </app-card>
+
+  <app-card [iconClasses] = "'fas fa-info-circle'" [title]= "'Card'" [subtitle]= "'Components'">
+
+    <p footer>Footer Content</p>
+    <p body>Body Content</p>
+
+  </app-card>
+
+</main>
+
+
