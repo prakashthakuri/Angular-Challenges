@@ -12,9 +12,9 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
 import { StarRatingsComponent } from './components/star-ratings/star-ratings.component';
 import { TopofpageComponent } from './components/topofpage/topofpage.component';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
-import { PipeDocumentationComponent } from './pipes/pipe-documentation/pipe-documentation.component';
+// import { PipeDocumentationComponent } from './pipes/pipe-documentation/pipe-documentation.component';
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
-import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
+// import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 
 @NgModule({
   declarations: [AppComponent,
@@ -25,9 +25,10 @@ import { DirectiveDocumentationComponent } from './directives/directive-document
                 StarRatingsComponent,
                 TopofpageComponent,
                 ComponentDocumentationComponent,
-                PipeDocumentationComponent,
+                // PipeDocumentationComponent,
                 ServiceDocumentationComponent,
-                DirectiveDocumentationComponent],
+                // DirectiveDocumentationComponent,
+              ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, RouterModule.forRoot([ ])],
   providers: [],
   bootstrap: [AppComponent],
