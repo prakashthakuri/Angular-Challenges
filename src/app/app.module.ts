@@ -19,6 +19,7 @@ import { CreditcardinputComponent } from './components/creditcardinput/creditcar
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { QuoteComponent } from './components/quote/quote.component';
+import { ToggleComponent } from './components/toggle/toggle.component';
 // import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 
 @NgModule({
@@ -37,6 +38,7 @@ import { QuoteComponent } from './components/quote/quote.component';
                 TwitterPostComponent,
                 ModalComponent,
                 QuoteComponent,
+                ToggleComponent,
                 // DirectiveDocumentationComponent,
               ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, RouterModule.forRoot([ ])],
