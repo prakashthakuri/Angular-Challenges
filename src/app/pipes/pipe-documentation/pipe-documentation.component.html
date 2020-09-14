@@ -1,16 +1,30 @@
-<main>
-  Pipes
 
-  <!-- <app-card [iconClasses] = "'fas fa-info-circle'" [title]= "'Truncate'" [subtitle]= "'Pipes'"> -->
+  <h2>Pipes</h2>
 <!--
-    <p body>{{'The Computer Science department of the Seidenberg School reviewed and revised the Master of Science in Computer Science in fall 2011. Since then, the department has been offering a 30-credit program that has been both strengthened and updated.
+  <app-card [iconClasses] = "'fas fa-info-circle'" [title]= "'Truncate'" [subtitle]= "'Pipes'">
 
-      The new rigorous curriculum is built on a core of algorithms and computing theory, Internet and web computing, grid and cloud computing, and database systems. It also offers students the flexibility of pursuing one or more focused, in-depth course sequences in cutting-edge areas like classical computer science, artificial intelligence, Internet computing, mobile computing, network security, and web security.
+    <p footer>This is a Pipe</p>
 
-      Whether you are looking to advance your career or change focus and keep ahead of the latest technologies, this master's program is your best choice.
-' | truncate : 75}}
-    </p> -->
+    <p body>Truncat    </p>
+
+  </app-card> -->
+<p> {{'Hi, I am Prakash and I am doing 100 Angular challenge. I am working on the pipes and I have just figured out that there is the
+  problem with the update of Angular, I also checked on the github and stackoverflow. Its a big issue, whenever I am trying to make some
+  changes while recompiling the working application crashes and creates a random non relevant error.' | truncate}}</p>
+
+ <hr/>
+
+
+
+  <!-- <app-card [iconClasses] = "'fas fa-info-circle'" [title]= "'Credit Card Formatter'" [subtitle]= "'Pipes'"> -->
+
+   <!-- <p> {{1112223344345123321 | creditcardFormatter}}</p> -->
+   <p> {{'1236789098769097' | creditcardFormatter }}</p>
+   <p>{{'fsds56789812353' | creditcardFormatter }}</p>
+   <p>{{'1231243' | creditcardFormatter}}</p>
+
+   <!-- //for pipes always put it inside the inverted comma   -->
+
 
   <!-- </app-card> -->
 
-</main>
