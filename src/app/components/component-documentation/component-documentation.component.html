@@ -1,5 +1,11 @@
 <main>
 
+  <app-card [iconClasses]= "'fas fa-info-circle'" [title] ="'Loader'" [subtitle] = "'Compoenents'">
+
+    <app-loader body [isLoading]= false> </app-loader>
+
+  </app-card>
+
   <app-card [iconClasses]= "'fas fa-info-circle'" [title] ="'Star Ratings'" [subtitle] = "'Compoenents'">
 
     <app-star-ratings body [rating] = "3.5"></app-star-ratings>

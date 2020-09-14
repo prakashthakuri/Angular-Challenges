@@ -14,6 +14,7 @@ import { TopofpageComponent } from './components/topofpage/topofpage.component';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 // import { PipeDocumentationComponent } from './pipes/pipe-documentation/pipe-documentation.component';
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
+import { LoaderComponent } from './components/loader/loader.component';
 // import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ServiceDocumentationComponent } from './services/service-documentation/
                 ComponentDocumentationComponent,
                 // PipeDocumentationComponent,
                 ServiceDocumentationComponent,
+                LoaderComponent,
                 // DirectiveDocumentationComponent,
               ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, RouterModule.forRoot([ ])],

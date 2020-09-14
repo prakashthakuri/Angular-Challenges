@@ -7,22 +7,24 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-
   // {path: '', component: AppComponent}, // this was the idea for home page
 
-
-  {path: '', component: ComponentDocumentationComponent},
-  {path: 'pipes', loadChildren: () => import('./pipes/pipes.module').then((m) => m.PipesModule) },
-  {path: 'services', component: ServiceDocumentationComponent},
-  {path: 'directives', loadChildren: () => import('./directives/directive.module').then((m) => m.DirectiveModule)}
-
-
+  { path: '', component: ComponentDocumentationComponent },
+  {
+    path: 'pipes',
+    loadChildren: () =>
+      import('./pipes/pipes.module').then((m) => m.PipesModule),
+  },
+  { path: 'services', component: ServiceDocumentationComponent },
+  {
+    path: 'directives',
+    loadChildren: () =>
+      import('./directives/directive.module').then((m) => m.DirectiveModule),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule {
-
-}
+export class AppRoutingModule {}

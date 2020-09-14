@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pipe-documentation.component.scss'],
 })
 export class PipeDocumentationComponent implements OnInit {
+
+  
   constructor() {}
 
   ngOnInit(): void {}
