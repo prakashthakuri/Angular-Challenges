@@ -1,16 +1,16 @@
 
   <h2>Pipes</h2>
-<!--
-  <app-card [iconClasses] = "'fas fa-info-circle'" [title]= "'Truncate'" [subtitle]= "'Pipes'">
+
+  <!-- <app-card [iconClasses] = "'fas fa-info-circle'" [title]= "'Truncate'" [subtitle]= "'Pipes'"> -->
 
     <p footer>This is a Pipe</p>
 
-    <p body>Truncat    </p>
+    <p body> {{'Hi, I am Prakash and I am doing 100 Angular challenge. I am working on the pipes and I have just figured out that there is the
+      problem with the update of Angular, I also checked on the github and stackoverflow. Its a big issue, whenever I am trying to make some
+      changes while recompiling the working application crashes and creates a random non relevant error.' | truncate}}</p>
 
-  </app-card> -->
-<p> {{'Hi, I am Prakash and I am doing 100 Angular challenge. I am working on the pipes and I have just figured out that there is the
-  problem with the update of Angular, I also checked on the github and stackoverflow. Its a big issue, whenever I am trying to make some
-  changes while recompiling the working application crashes and creates a random non relevant error.' | truncate}}</p>
+  <!-- </app-card> -->
+
 
  <hr/>
 
@@ -27,4 +27,23 @@
 
 
   <!-- </app-card> -->
+
+
+  <hr/>
+
+  <hr/>
+
+    <!-- <app-card [iconClasses] = "'fas fa-info-circle'" [title]= "'Credit Card Formatter'" [subtitle]= "'Pipes'"> -->
+      <div body >
+        {{flattenData | flatten}}
+
+      </div>
+
+      <div footer>
+        <button (click)= "modifyFlatten()">Modify</button>
+      </div>
+
+      <!-- </app-card> -->
+
+
 

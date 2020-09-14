@@ -7,7 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class DirectiveDocumentationComponent  {
 
-  
+  // tslint:disable-next-line: typedef
+  public log(){
+    console.log('Clicked');
+  }
+
+
   constructor() { }
 
 

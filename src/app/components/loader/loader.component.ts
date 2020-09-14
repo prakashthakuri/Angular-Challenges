@@ -10,7 +10,7 @@ export class LoaderComponent implements OnInit {
 
   @Input() public isLoading = false;
   @Input() public LoaderType: LoaderType = LoaderType.Circular;
-  public LoaderType = LoaderType;
+  public loaderType = LoaderType;
 
   public get loadingText (): string {
     return `${this.loading}`;
