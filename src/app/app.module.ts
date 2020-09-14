@@ -20,6 +20,7 @@ import { TwitterPostComponent } from './components/twitter-post/twitter-post.com
 import { ModalComponent } from './components/modal/modal.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
+import { FilterTermPipe } from './pipes/filter-term.pipe';
 // import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 
 @NgModule({
@@ -39,7 +40,7 @@ import { ToggleComponent } from './components/toggle/toggle.component';
                 ModalComponent,
                 QuoteComponent,
                 ToggleComponent,
-                // DirectiveDocumentationComponent,
+               // DirectiveDocumentationComponent,
               ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, RouterModule.forRoot([ ])],
   providers: [],
