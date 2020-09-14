@@ -16,6 +16,7 @@ import { ComponentDocumentationComponent } from './components/component-document
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { CreditcardinputComponent } from './components/creditcardinput/creditcardinput.component';
+import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 // import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 
 @NgModule({
@@ -31,6 +32,7 @@ import { CreditcardinputComponent } from './components/creditcardinput/creditcar
                 ServiceDocumentationComponent,
                 LoaderComponent,
                 CreditcardinputComponent,
+                TwitterPostComponent,
                 // DirectiveDocumentationComponent,
               ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, RouterModule.forRoot([ ])],
