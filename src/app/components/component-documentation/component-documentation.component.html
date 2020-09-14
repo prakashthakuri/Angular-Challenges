@@ -1,19 +1,30 @@
 <main>
 
-  <app-card [iconClasses]= "'fas fa-info-circle'" [title] ="'Loader'" [subtitle] = "'Compoenents'">
+
+  <app-card [iconClasses]= "'fas fa-info-circle'" [title] ="'Credit Card Input'" [subtitle] = "'Components'">
+
+    <div body>
+      <app-creditcardinput  [creditCardNumber]= "'4215823409245124'" [isReadOnly]= "'false'"></app-creditcardinput>
+    <app-creditcardinput  [creditCardNumber]= "'341582340342512'" [isReadOnly]= "'ture'"></app-creditcardinput>
+
+    </div>
+
+
+  </app-card>
+  <app-card [iconClasses]= "'fas fa-info-circle'" [title] ="'Loader'" [subtitle] = "'Components'">
 
     <app-loader body [isLoading]= false> </app-loader>
 
   </app-card>
 
-  <app-card [iconClasses]= "'fas fa-info-circle'" [title] ="'Star Ratings'" [subtitle] = "'Compoenents'">
+  <app-card [iconClasses]= "'fas fa-info-circle'" [title] ="'Star Ratings'" [subtitle] = "'Components'">
 
     <app-star-ratings body [rating] = "3.5"></app-star-ratings>
 
     <p footer> Give a review</p>
   </app-card>
 
-  <app-card [iconClasses]= "'fas fa-info-circle'" [title]= "'Progress Bar'" [subtitle]= "'Compoenents'">
+  <app-card [iconClasses]= "'fas fa-info-circle'" [title]= "'Progress Bar'" [subtitle]= "'Components'">
 
     <app-progress-bar body [value]= "progressValue"></app-progress-bar>
 
@@ -21,7 +32,7 @@
 
   </app-card>
 
-  <app-card [iconClasses]= "'fas fa-info-circle'" [title]= "'Accordian'" [subtitle]= "'Compoenents'">
+  <app-card [iconClasses]= "'fas fa-info-circle'" [title]= "'Accordian'" [subtitle]= "'Components'">
 
     <app-accordion body [items]= "accordionItems"></app-accordion>
 
