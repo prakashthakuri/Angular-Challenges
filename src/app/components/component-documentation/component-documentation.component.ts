@@ -1,5 +1,6 @@
 import { AccordionItem } from './../accordion/accordian-item.interface';
 import { Component, OnInit } from '@angular/core';
+import { LoaderType } from '../loader/enum/loader-type.enum';
 
 
 @Component({
@@ -22,6 +23,8 @@ export class ComponentDocumentationComponent implements OnInit {
       isExpanded: false,
     },
   ];
+
+  public loaderType = LoaderType.Loading;
 
   constructor() { }
 
