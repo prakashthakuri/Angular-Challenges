@@ -13,7 +13,7 @@ import { StarRatingsComponent } from './components/star-ratings/star-ratings.com
 import { TopofpageComponent } from './components/topofpage/topofpage.component';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 // import { PipeDocumentationComponent } from './pipes/pipe-documentation/pipe-documentation.component';
-import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
+// import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { CreditcardinputComponent } from './components/creditcardinput/creditcardinput.component';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
@@ -21,6 +21,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { FilterTermPipe } from './pipes/filter-term.pipe';
+import { OtherDocumentationComponent } from './other/other-documentation/other-documentation.component';
 // import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 
 @NgModule({
@@ -33,16 +34,17 @@ import { FilterTermPipe } from './pipes/filter-term.pipe';
                 TopofpageComponent,
                 ComponentDocumentationComponent,
                 // PipeDocumentationComponent,
-                ServiceDocumentationComponent,
+                // ServiceDocumentationComponent,
                 LoaderComponent,
                 CreditcardinputComponent,
                 TwitterPostComponent,
                 ModalComponent,
                 QuoteComponent,
                 ToggleComponent,
+                OtherDocumentationComponent,
                // DirectiveDocumentationComponent,
               ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, RouterModule.forRoot([ ])],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule,  RouterModule.forRoot([ ])],
   providers: [],
   bootstrap: [AppComponent],
 })

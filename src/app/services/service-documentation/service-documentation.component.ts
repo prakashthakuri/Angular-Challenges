@@ -1,4 +1,6 @@
+import { UserService } from './../user.service';
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user.model';
 
 @Component({
   selector: 'app-service-documentation',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceDocumentationComponent implements OnInit {
 
-  constructor() { }
+  public user = new User();
+  constructor(public userService: UserService) { }
 
   ngOnInit(): void {
-  }
 
+    this.userService.getUserById(1).subscribe({
+      next: (response: any) => {
+        this.user = response;
+      },
+      error: (error) => {
+        console.log(error);
+      },
+      complete: () => {
+        console.log('Done');
+      }
+
+ });
+}
 }

@@ -6,13 +6,12 @@ import { CommonModule } from '@angular/common';
 import { DebounceClickDirective } from './debounce-click.directive';
 import { RippleDirectiveDirective } from './ripple-directive.directive';
 
-
-
 @NgModule({
-  declarations: [DirectiveDocumentationComponent, DebounceClickDirective, RippleDirectiveDirective],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(DIRECTIVE_ROUTES),
-  ]
+  declarations: [
+    DirectiveDocumentationComponent,
+    DebounceClickDirective,
+    RippleDirectiveDirective,
+  ],
+  imports: [CommonModule, RouterModule.forChild(DIRECTIVE_ROUTES)],
 })
-export class DirectiveModule { }
+export class DirectiveModule {}

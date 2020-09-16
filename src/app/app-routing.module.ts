@@ -15,7 +15,9 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pipes/pipes.module').then((m) => m.PipesModule),
   },
-  { path: 'services', component: ServiceDocumentationComponent },
+  { path: 'services',
+      loadChildren: () =>
+          import('./services/service.module').then((m) => m.ServiceModule)},
   {
     path: 'directives',
     loadChildren: () =>
